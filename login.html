@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تسجيل دخول / تسجيل صيدلية جديدة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-box">
+    <h2>تسجيل دخول الصيدلية</h2>
+    <input type="text" id="loginUsername" placeholder="اسم الصيدلية">
+    <input type="password" id="loginPassword" placeholder="كلمة المرور">
+    <button onclick="login()">تسجيل الدخول</button>
+    <p>للمستخدم العادي: <a href="search.html">البحث عن الأدوية</a></p>
+</div>
+
+<div class="login-box">
+    <h2>تسجيل صيدلية جديدة</h2>
+    <input type="text" id="regName" placeholder="اسم الصيدلية">
+    <input type="password" id="regPassword" placeholder="كلمة المرور">
+    <input type="text" id="regAddress" placeholder="العنوان">
+    <input type="text" id="regPhone" placeholder="الهاتف">
+    <button onclick="registerPharmacy()">تسجيل الصيدلية</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

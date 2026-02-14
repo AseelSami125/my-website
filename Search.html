@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>بحث الأدوية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>ابحث عن دواء</h1>
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="اكتب اسم الدواء..." onkeyup="searchMedicineGlobal()">
+</div>
+
+<h3>نتائج البحث</h3>
+<table>
+    <thead>
+        <tr>
+            <th>الدواء</th>
+            <th>السعر</th>
+            <th>تاريخ الانتهاء</th>
+            <th>الصيدلية</th>
+            <th>العنوان</th>
+            <th>الهاتف</th>
+        </tr>
+    </thead>
+    <tbody id="globalMedicineTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+<script>
+displayMedicinesGlobal();
+</script>
+</body>
+</html>

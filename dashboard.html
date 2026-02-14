@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة تحكم الصيدلية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>لوحة تحكم الصيدلية</h1>
+<div class="form-box">
+    <h3>بيانات الصيدلية</h3>
+    <input type="text" id="pharmacyName" placeholder="اسم الصيدلية">
+    <input type="text" id="pharmacyAddress" placeholder="العنوان">
+    <input type="text" id="pharmacyPhone" placeholder="الهاتف">
+</div>
+
+<div class="form-box">
+    <h3>إضافة / تعديل دواء</h3>
+    <input type="hidden" id="editIndex">
+    <input type="text" id="medicineName" placeholder="اسم الدواء">
+    <input type="number" id="medicinePrice" placeholder="السعر">
+    <input type="date" id="expiryDate">
+    <button onclick="saveMedicine()">حفظ الدواء</button>
+</div>
+
+<h3>قائمة الأدوية</h3>
+<table>
+    <thead>
+        <tr>
+            <th>الدواء</th>
+            <th>السعر</th>
+            <th>تاريخ الانتهاء</th>
+            <th>الإجراءات</th>
+        </tr>
+    </thead>
+    <tbody id="medicineTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+<script>
+loadPharmacyData();
+displayMedicines();
+</script>
+</body>
+</html>
